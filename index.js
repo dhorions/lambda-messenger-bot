@@ -15,7 +15,7 @@ var responses = Array(
         imageUrl: "http://quodlibet.be/images/dries.png"
     },
     {
-        text : "You can find my code on Medium ( http://mediumurl.",
+        text : "You can find my code on Medium ( https://medium.com/@quodlibet_be/building-a-serverless-facebook-messenger-chatbot-a18b374a2fa4#.phr6h7crn ).",
         imageUrl: null
     },
     {
@@ -89,7 +89,6 @@ var respond = function respond(recipientId,textMessage, imageUrl)
     if(imageUrl !== null && textMessage !== null)
     { 
         //Use generic template to send a text and image
-        
         messageData.message =  {
             attachment : {
                 type : "template",
